@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow </title>
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            border: 2px solid blue;
+            overflow:scroll;
+            overflow-x: hidden;
+
+        }
+        /* #box-1{
+            overflow:scroll;
+            overflow-x: hidden;
+        } */
+        .ellipsis{
+            width: 200px;
+            border: 2px solid royalblue;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header class="ellipsis">
+            <p title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci asperiores repellendus deserunt velit.">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci asperiores repellendus deserunt velit.
+            </p>
+        </header>
+        <div id="box-1" class="box">
+            <h3>My text box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto qui molestiae perferendis consectetur ullam minima iure laborum reprehenderit totam suscipit alias excepturi, vero, voluptate ex accusantium corrupti modi ducimus, illo sequi voluptates nam vel saepe doloremque? Enim saepe beatae soluta, iste quaerat necessitatibus eveniet, odit rerum possimus aspernatur doloribus debitis qui veniam corrupti minus, excepturi recusandae? Voluptate molestiae labore, neque minima hic magni alias sint ab consequatur consequuntur natus nisi sed sit dolore ipsa recusandae animi nam eum voluptas est possimus facere explicabo iste! Veniam consectetur rerum saepe, voluptatum hic sint quasi perferendis similique obcaecati ex soluta distinctio aliquid et.</p>
+        </div>
+        <div class="box">
+            <h3>My text box 2</h3>
+            <p>Veritatis deserunt maiores autem quisquam? Dolorum, ratione cum exercitationem aliquid a facere et eius esse corporis labore. Nobis veritatis cum commodi quibusdam sit perspiciatis magni, in quis consectetur ipsum laudantium. Nihil, dignissimos at! Asperiores aperiam iure, itaque totam provident porro iste sed fugit quasi dolorem tempora doloribus unde esse eum? Quibusdam numquam architecto vitae at voluptas consequatur ratione nobis adipisci magnam, ad maiores laborum nesciunt cumque tempore dignissimos commodi ipsa, quam harum, velit suscipit veritatis provident dolor repudiandae! Qui reprehenderit possimus id sapiente officia, laboriosam optio, sed eaque praesentium ipsa delectus ab aliquam aspernatur neque, vitae ea! Dignissimos, minima eligendi.</p>
+        </div>
+    </section>
+</body>
+</html>
